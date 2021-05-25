@@ -1,0 +1,109 @@
+<meta charset="UTF-8">
+
+
+
+<h1>Qual a minha classe?</h1>
+
+Com base nas suas respostas, apontaremos qual a classe melhor corresponde à sua personalidade. Serão feitas algumas perguntas sobre a sua personalidade. Responda com um número de 1 a 10, sendo 1 discordo totalmente e 5 concordo totalmente.<br><br>
+
+Digite seu nome: <input/> <button>Começar o teste.</button>
+
+<script>
+
+    alert("Olá! Esse projeto é apenas um experimento para praticar!");
+
+    function pulaLinha() {
+        document.write("<br><br>");
+    }
+
+    function mostra(info) {
+        document.write(info);
+        pulaLinha();
+    }
+
+    function pergunta(msg) {
+        return parseInt(prompt(msg));
+
+    }
+
+    var input = document.querySelector("input");
+    input.value = "";
+    input.focus();
+
+    function comecar() {
+
+        var classeCerta = [];
+
+        var pergunta1 = parseInt(prompt("Gosto de ajudar as pessoas."));
+        var pergunta2 = parseInt(prompt("Não tenho medo de fazer coisas novas."));
+        var pergunta3 = parseInt(prompt("Dinheiro é importante."));
+        var pergunta4 = parseInt(prompt("Conhecimento é importante."));
+        var pergunta5 = parseInt(prompt("Sempre tomo a iniciativa para resolver um problema."));
+        var pergunta6 = parseInt(prompt("A justiça não é preta nem branca, é cinza."));
+        var pergunta7 = parseInt(prompt("Prefiro sair ao ficar em casa."));
+        var pergunta8 = parseInt(prompt("Tomo minhas decisões sem receios."));
+        var pergunta9 = parseInt(prompt("O silêncio é a melhor música."));
+        var pergunta10 = parseInt(prompt("Meu corpo é um templo."));
+
+        var resultado = pergunta1 + pergunta2 + pergunta3 + pergunta4 + pergunta5 + pergunta6 + pergunta7 + pergunta8 + pergunta9 + pergunta10;
+
+            console.log(resultado);
+
+        if(resultado <= 10 ) {
+            classeCerta.push("APRENDIZ");
+            alert(input.value + ", você seria um ótimo " + classeCerta + ".");
+        }
+
+        if(resultado >= 11 && resultado <= 20 ){
+            classeCerta.push("NINJA");
+            alert(input.value + ", você seria um ótimo " + classeCerta + ".");            
+        }
+
+        if(resultado >= 21 && resultado <= 30){
+            classeCerta.push("BERSEKER");
+            alert(input.value + ", você seria um ótimo " + classeCerta + ".");          
+        }
+
+        if(resultado >= 31 && resultado <= 40){
+            classeCerta.push("MONGE");
+            alert(input.value + ", você seria um ótimo " + classeCerta + ".");            
+        }
+
+        if(resultado >= 41 && resultado <= 50){
+            classeCerta.push("LADRÃO");
+            alert(input.value + ", você seria um ótimo " + classeCerta + ".");           
+        }
+
+        if(resultado >= 51 && resultado <= 60){
+            classeCerta.push("ARQUEIRO");
+            alert(input.value + ", você seria um ótimo " + classeCerta + ".");            
+        }
+
+        if(resultado >= 61 && resultado <= 70){
+            classeCerta.push("LUTADOR");
+            alert(input.value + ", você seria um ótimo " + classeCerta + ".");            
+        }
+
+        if(resultado >= 71 && resultado <= 80){
+            classeCerta.push("MAGO");
+            alert(input.value + ", você seria um ótimo " + classeCerta + ".");            
+        }
+
+        if(resultado >= 81 && resultado <= 90){
+            classeCerta.push("ROGUE");
+            alert(input.value + ", você seria um ótimo " + classeCerta + ".");            
+        }
+
+        if(resultado >= 91 && resultado <= 100){
+            classeCerta.push("GUERREIRO");
+            alert(input.value + ", você seria um ótimo " + classeCerta + ".");            
+        }
+    }
+
+    var buttonTeste = document.querySelector("button");
+
+    buttonTeste.onclick = comecar;
+
+
+
+</script>
