@@ -4,9 +4,11 @@
 
 <h1>Qual a minha classe?</h1>
 
-Com base nas suas respostas, apontaremos qual a classe melhor corresponde à sua personalidade. Serão feitas algumas perguntas sobre a sua personalidade. Responda com um número de 1 a 10, sendo 1 discordo totalmente e 5 concordo totalmente.<br><br>
+Com base nas suas respostas, apontaremos qual a classe melhor corresponde à sua personalidade. Serão feitas algumas
+perguntas sobre a sua personalidade. Responda com um número de 1 a 10, sendo 1 discordo totalmente e 5 concordo
+totalmente.<br><br>
 
-Digite seu nome: <input/> <button>Começar o teste.</button>
+Digite seu nome: <input /> <button>Começar o teste.</button>
 
 <script>
 
@@ -40,63 +42,63 @@ Digite seu nome: <input/> <button>Começar o teste.</button>
         var pergunta4 = parseInt(prompt("Conhecimento é importante."));
         var pergunta5 = parseInt(prompt("Sempre tomo a iniciativa para resolver um problema."));
         var pergunta6 = parseInt(prompt("A justiça não é preta nem branca, é cinza."));
-        var pergunta7 = parseInt(prompt("Prefiro sair ao ficar em casa."));
+        var pergunta7 = parseInt(prompt("Prefiro ficar ao sair de casa."));
         var pergunta8 = parseInt(prompt("Tomo minhas decisões sem receios."));
-        var pergunta9 = parseInt(prompt("O silêncio é a melhor música."));
-        var pergunta10 = parseInt(prompt("Meu corpo é um templo."));
+        var pergunta9 = parseInt(prompt("O silêncio é a melhor canção."));
+        var pergunta10 = parseInt(prompt("Meu corpo é uma igreja."));
 
         var resultado = pergunta1 + pergunta2 + pergunta3 + pergunta4 + pergunta5 + pergunta6 + pergunta7 + pergunta8 + pergunta9 + pergunta10;
 
-            console.log(resultado);
+        console.log(resultado);
 
-        if(resultado <= 10 ) {
+        if (resultado <= 10) {
             classeCerta.push("APRENDIZ");
             alert(input.value + ", você seria um ótimo " + classeCerta + ".");
         }
 
-        if(resultado >= 11 && resultado <= 20 ){
+        if (resultado >= 11 && resultado <= 20) {
             classeCerta.push("NINJA");
-            alert(input.value + ", você seria um ótimo " + classeCerta + ".");            
+            alert(input.value + ", você seria um ótimo " + classeCerta + ".");
         }
 
-        if(resultado >= 21 && resultado <= 30){
+        if (resultado >= 21 && resultado <= 30) {
             classeCerta.push("BERSEKER");
-            alert(input.value + ", você seria um ótimo " + classeCerta + ".");          
+            alert(input.value + ", você seria um ótimo " + classeCerta + ".");
         }
 
-        if(resultado >= 31 && resultado <= 40){
+        if (resultado >= 31 && resultado <= 40) {
             classeCerta.push("MONGE");
-            alert(input.value + ", você seria um ótimo " + classeCerta + ".");            
+            alert(input.value + ", você seria um ótimo " + classeCerta + ".");
         }
 
-        if(resultado >= 41 && resultado <= 50){
+        if (resultado >= 41 && resultado <= 50) {
             classeCerta.push("LADRÃO");
-            alert(input.value + ", você seria um ótimo " + classeCerta + ".");           
+            alert(input.value + ", você seria um ótimo " + classeCerta + ".");
         }
 
-        if(resultado >= 51 && resultado <= 60){
+        if (resultado >= 51 && resultado <= 60) {
             classeCerta.push("ARQUEIRO");
-            alert(input.value + ", você seria um ótimo " + classeCerta + ".");            
+            alert(input.value + ", você seria um ótimo " + classeCerta + ".");
         }
 
-        if(resultado >= 61 && resultado <= 70){
+        if (resultado >= 61 && resultado <= 70) {
             classeCerta.push("LUTADOR");
-            alert(input.value + ", você seria um ótimo " + classeCerta + ".");            
+            alert(input.value + ", você seria um ótimo " + classeCerta + ".");
         }
 
-        if(resultado >= 71 && resultado <= 80){
+        if (resultado >= 71 && resultado <= 80) {
             classeCerta.push("MAGO");
-            alert(input.value + ", você seria um ótimo " + classeCerta + ".");            
+            alert(input.value + ", você seria um ótimo " + classeCerta + ".");
         }
 
-        if(resultado >= 81 && resultado <= 90){
+        if (resultado >= 81 && resultado <= 90) {
             classeCerta.push("ROGUE");
-            alert(input.value + ", você seria um ótimo " + classeCerta + ".");            
+            alert(input.value + ", você seria um ótimo " + classeCerta + ".");
         }
 
-        if(resultado >= 91 && resultado <= 100){
+        if (resultado >= 91 && resultado <= 100) {
             classeCerta.push("GUERREIRO");
-            alert(input.value + ", você seria um ótimo " + classeCerta + ".");            
+            alert(input.value + ", você seria um ótimo " + classeCerta + ".");
         }
     }
 
